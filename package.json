@@ -11,6 +11,11 @@
     "csv-parser": "^2.3.2",
     "url": "^0.11.0"
   },
+  ,
+  "repository": {
+  "type": "git",
+  "url": ""
+},
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
