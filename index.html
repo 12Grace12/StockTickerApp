@@ -1,0 +1,55 @@
+<!doctype html> 
+<html> 
+<head> 
+    <title>Stock Ticker</title>
+    <meta charset="utf-8"/> 
+    <link rel="stylesheet" href=https://bootswatch.com/4/journal/bootstrap.min.css>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        body {
+          background-color: rgb(144, 240, 125);
+          text-align: center;
+          margin: 10px;
+          background-image: url("https://wallpaperaccess.com/full/2399244.jpg");
+          background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        }
+        .card 
+        {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            background-color: white;
+            transition: 0.3s;
+            border-radius: 5px; /* 5px rounded corners */
+            width: 40%;
+            margin: auto;
+    
+        }
+        .card .card-body{
+            margin: auto;
+            background-color: white;
+            text-decoration: none;
+        }
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+    </style>
+
+    
+</head>
+
+<body>
+  <h1>Companies and Stocks</h1>
+  <h2>Please input Company Name or Stock Ticker to get information </h2>
+     <form method = "GET" action = "https://stocktickermap.herokuapp.com">
+       <select name="myselect">
+         <option value="0">Select</option>
+         <option value="1">Company Name</option>
+         <option value="2">Stock Ticker</option>
+       </select>
+       <input type="text" id="search_value" name="search_value">
+       <input type = "submit" name = "search" value = "Search">
+    </form>
+</body>
+</html>
