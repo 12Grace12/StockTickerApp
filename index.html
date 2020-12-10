@@ -1,0 +1,40 @@
+<!doctype html> 
+<html> 
+<head> 
+    <title>Stock Ticker Map App</title>
+    <meta charset="utf-8"/> 
+    <link rel="stylesheet" href=https://bootswatch.com/4/journal/bootstrap.min.css>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        body {
+          background-color: rgb(144, 240, 125);
+          text-align: center;
+          margin: 10px;
+          background-image: url("https://wallpaperaccess.com/full/2399244.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          color: white;
+        }
+        
+    </style>
+
+    
+</head>
+
+<body>
+  <h1>Companies and Stocks Finder</h1>
+  <h2>Choose Company Name or Stock Ticker to get its info! </h2>
+     <form method = "GET" action = "http://localhost:3000">
+
+       <select name="choose">
+         <option value="0">--Select--</option>
+         <option value="1">Company Name</option>
+         <option value="2">Stock Ticker</option>
+       </select>
+
+       <input type="text" id="input_val" name="input_val">
+       <input type = "submit" name = "search" value = "Search">
+    </form>
+</body>
+</html>
